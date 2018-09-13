@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fa">
+<head>
+	<!-- Document Settings -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Page Title -->
+	<title>روزنوشتهای یک کامپیوترپیشه</title>
+	<!-- Fonts -->
+	<!-- Styles -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<!-- Scripts -->
+<script src="{% static 'js/shrink.js' %}"></script>
+
+<header id="header">
+	<nav class="navbar  navbar-default">
+		<div class="container">
+			<div id="logo">
+				<img id="logo" src="{% static 'img/header-me.png' %}">
+			</div>
+			<div id="restofheader">
+				<a href="archive-cat.html">خانه</a>
+				<a href="archive-cat.html">درباره من</a>
+			</div>
+		</div>
+	</nav>
+</header>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+	<div class="container-fluid text-center ft-copyright">
+		<p>
+			<a href="">ساخته و پرداخته شده توسط خودم (: </a>
+		</p>
+	</div>
+</footer>
+</body>
+</html>
