@@ -6,8 +6,46 @@ html {
   width: 100%;
   direction: rtl;
 }
+.bg {
+  position: relative;
+  background-image: url("../img/intro.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.bg:hover {
+  opacity: 0.6;
+}
+.img-title {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 0;
+  opacity: 0;
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.bg:hover .img-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+  opacity: 1;
+}
 .post-cat, .features-content .marketing-promo-box .promo-tag, .magazine-blog .boxed .magazine-content .feature-post .post-content .entry-meta .tag {
-  color: #aa0f57;
+  color: #009575;
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
@@ -22,7 +60,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 a {
   background-color:transparent;
@@ -36,7 +74,7 @@ a {
   line-height: 1.4;
 }
 a:hover {
-  color: #ff0b40;
+  color: #00af89;
   text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +99,7 @@ img {
   max-width: 100%;
 }
 .default-content {
-  margin-top: 80px;
+  margin-top: 40px;
 }  
 footer .ft-copyright {
   background: #222;
@@ -74,7 +112,7 @@ footer .ft-copyright p a {
 color: #888;
 }
 footer .ft-copyright p a:hover {
-  color: #da521e;
+  color: #00e7ad;
 }
 /*sidebar css*/
 .sidebar .widget {
@@ -91,7 +129,7 @@ footer .ft-copyright p a:hover {
   margin-bottom: 28px;
 }
 .sidebar .widget.about-me-widget {
-  background: url("../img/about-me-bg.jpg") no-repeat;
+  background: url("../img/about-me-bg.png") no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
   background-color: #fff;
@@ -180,8 +218,8 @@ footer .ft-copyright p a:hover {
   margin-bottom: 35px;
 }
 .single-blog .post-content .continue-reading a {
-  border: 1px solid #b8004d;
-  color: #b8004d;
+  border: 1px solid #04644f;
+  color: #04644f;
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -189,7 +227,7 @@ footer .ft-copyright p a:hover {
   padding: 10px 18px;
 }
 .single-blog .post-content .continue-reading a:hover {
-  background: #b60965;
+  background: #37857a;
   color: #fff;
 }
 .single-blog .post-content .post-meta {
@@ -243,6 +281,7 @@ footer .ft-copyright p a:hover {
 }
 .container {
   padding-top: 0px;
+  padding-bottom: 0px;
   padding-right:0px;
   padding-left:0px;
   margin-right:auto;
@@ -250,6 +289,27 @@ footer .ft-copyright p a:hover {
 }
 nav .container a {
   padding-left: 15px;
+  display: inline-block;
+}
+#logo {
+  display: table-cell;
+  float: left;
+  line-height: 0;
+  width: 20%;
+}
+#logo img {
+  width: 80px;
+  height: 80px;
+  height: auto;
+}
+#restofheader {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 10px;
+}
+#logo {
+  transition: 0.2s;  
 }
 #header {
   line-height: 80px;
