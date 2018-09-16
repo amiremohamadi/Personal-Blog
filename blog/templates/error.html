@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block post %}
+<div class="col-sm-8">
+	<article class="single-blog">
+		<div class="post-thumb">
+			<div class="post-content">
+                <img class="img-error" src="{% static 'img/error-img.png' %}">
+				<div class="entry-header text-center">
+					<h2>ای واااای! ظاهرا مشکلی پیش اومده :(</h2>
+				</div>
+                <div class="continue-reading text-center">
+                    <a href="/">برگردیم</a>
+                </div>
+            </div>
+        
+	</article>
+</div>
+{% endblock %}

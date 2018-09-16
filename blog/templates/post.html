@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block post %}
+<div class="col-sm-8">
+	<article class="single-blog">
+		<div class="post-thumb">
+			{% if post.head_image %}
+			<img style="width: 100%" src="/media/{{ post.head_image }}">							
+			{% endif %}
+			<div class="post-content">
+				<div class="entry-header text-center">
+					<h2>{{ post.header }}</h2>
+				</div>
+				<div class="entry-content">
+					<p>
+						{{ post.content | safe }}
+					</p>
+				</div>
+                <div class="post-meta">
+					<ul class="list-inline author-meta">
+						<li class="date">{{ post.time }}</li>
+						<li class="meta-text">منتشر شده در</li>
+						<a href="" class="post-cat">{{ post.tag }}</a>
+					</ul>
+				</div>
+		</div>
+    </article>
+</div>
+{% endblock %}
