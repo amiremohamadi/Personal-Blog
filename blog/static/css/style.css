@@ -1,21 +1,14 @@
 @font-face {
-  font-family: 'BYekan';
-  src: url('../font/BYekan.woff') format('woff'),
-       url('../font/BYekan.ttf') format('truetype'),
-       url('../font/BYekan.svg#BYekan') format('svg');
+  font-family: 'IRANSansWeb-Light';
+  src: url('../font/IRANSansWeb-Light.eot');
+  src: url('../font/IRANSansWeb-Light.woff2') format('woff2'),
+       url('../font/IRANSansWeb-Light.woff') format('woff'),
+       url('../font/IRANSansWeb-Light.ttf') format('truetype'),
+       url('../font/IRANSansWeb-Light.svg#IRANSansWeb-Light') format('svg'),
+       url('../font/IRANSansWeb-Light.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'font';
-  src: url('../font/font.eot');
-  src: url('../font/font.woff2') format('woff2'),
-       url('../font/font.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 html {
   font-family: inherit;
   -webkit-text-size-adjust:100%;
@@ -62,17 +55,17 @@ html {
   height: auto;
   opacity: 1;
 }
-.post-cat, .features-content .marketing-promo-box .promo-tag, .magazine-blog .boxed .magazine-content .feature-post .post-content .entry-meta .tag {
+.post-cat{
   color: #009575;
   display: inline-block;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 body {
   background: #f4f4f4;
   color: #444;
-  font-family: 'BYekan';
+  font-family: 'IRANSansWeb-Light';
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -96,7 +89,7 @@ a:hover {
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  font-family: 'BYekan';
+  font-family: 'IRANSansWeb-Light';
   margin-top: 0;
 }
 header {
@@ -269,6 +262,33 @@ footer .ft-copyright p a:hover {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.pagination {
+  display: inline-block;
+}
+.pagination a{
+  border: 1px solid #e7e7e7;
+  color: #222;
+  background: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 14px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.deactive a:hover {
+    background: #37857a;
+    color: #fff;
+}
+.active a{
+  background: #e8f0eb;  
+}
+/*error img */
+.img-error {
+  display:block;
+  margin:auto;
+  width: 50%;
+  padding-bottom: 20px;
+}
 /*snippets */
 * {
   -webkit-box-sizing:border-box;
@@ -292,6 +312,12 @@ footer .ft-copyright p a:hover {
   display:inline-block;
   padding-right:5px;
   padding-left:5px;
+}
+.list-inline .date {
+  font-size: 14px;
+}
+.list-inline .meta-text {
+  font-size: 14px;
 }
 .container {
   padding-top: 0px;

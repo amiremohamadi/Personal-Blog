@@ -2,10 +2,9 @@
 blog URL Configuration
 """
 from django.contrib import admin
-from django.urls import re_path
-from django.views.generic import TemplateView
+from django.urls import re_path, include
 
 urlpatterns = [
-    re_path('^admin/', admin.site.urls),
-    re_path('^$', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'^', include('posts.urls'))
 ]
